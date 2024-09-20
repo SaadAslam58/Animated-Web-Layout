@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.progress {
+  height: 2px;
+  background-color: rgb(79, 76, 76);
+  animation: progress 2s;
+}
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  60% {
+    width: 70vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+
+header {
+  background-color: black;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav h2 {
+  color: white;
+  padding: 10px;
+}
+nav ul {
+  cursor: pointer;
+  list-style-type: none;
+  display: flex;
+}
+nav ul li {
+  padding: 17px;
+  color: white;
+}
+.slider {
+  background-color: rgb(24, 24, 24);
+  height: 87vh;
+  width: auto;
+}
+.slider .anime {
+  display: flex;
+  height: auto;
+}
+.slider .anime1 {
+  background-color: rgb(33, 33, 33);
+  display: flex;
+}
+.slider .anime2 {
+  background-color: rgb(21, 21, 21);
+  display: flex;
+}
+.slider .anime3 {
+  background-color: rgb(33, 33, 33);
+  display: flex;
+}
+
+.slider .anime h1 {
+  padding: 40px 0;
+  /* margin-left: 190px; */
+  color: dimgray;
+  background: fixed;
+}
+.slider .anime1 h1 {
+  padding: 40px;
+  /* margin-left: 200px; */
+  color: dimgray;
+  background: fixed;
+}
+.slider .anime2 h1 {
+  padding: 40px;
+  /* margin-left: 600px; */
+  color: dimgray;
+  background: fixed;
+}
+.slider .anime3 h1 {
+  padding: 40px;
+  /* margin-left: 500px; */
+  color: dimgray;
+  background: fixed;
+}
+
+.slider .anime img {
+  padding: 3px;
+  width: 220px;
+  height: 118px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  background-color: rgb(23, 23, 23);
+  animation: anime 2s infinite alternate;
+  animation-delay: 1s;
+}
+@keyframes anime {
+  0% {
+    transform: translate(-60%);
+  }
+
+  100% {
+    transform: translate(390%);
+  }
+}
+
+.slider .anime1 img {
+  padding: 3px;
+  width: 220px;
+  height: 118px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  animation: anime1 4s infinite alternate-reverse;
+  animation-delay: 1s;
+}
+@keyframes anime1 {
+  0% {
+    transform: translate(0%);
+  }
+  50% {
+    transform: translate(180%);
+  }
+  100% {
+    transform: translate(355%);
+  }
+}
+
+.slider .anime2 img {
+  padding: 3px;
+  width: 220px;
+  height: 118px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  animation: anime2 2s infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 1s;
+}
+@keyframes anime2 {
+  0% {
+    transform: translate(0%);
+  }
+  50% {
+    transform: translate(250%);
+  }
+  100% {
+    transform: translate(365%);
+  }
+}
+.slider .anime3 img {
+  padding: 3px;
+  width: 220px;
+  height: 118px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  animation: anime3 3s infinite alternate;
+  animation-delay: 1s;
+}
+@keyframes anime3 {
+  0% {
+    transform: translate(0%);
+  }
+  50% {
+    transform: translate(150%);
+  }
+  100% {
+    transform: translate(455%);
+  }
+}
+footer {
+ 
+  background-color: white;
+}
+.center {
+  
+  text-align: center;
+  color: black;
+
+}
